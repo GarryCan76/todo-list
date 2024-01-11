@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  color: white;
+}
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #323844;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root{
+  height: 100%;
+}
+.App{
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.tag-creator{
+  background-color: #4e586b;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+textarea{
+  flex-grow: 1;
+  resize: none;
+  overflow-y: scroll;
+  background-color: #323844;
+}
+input,button{
+  background-color: #323844;
+}
+
+.tag{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 40%;
+  margin: 1%;
+}
+.todo{
+  background-color: #4e586b;
+}
+.done{
+  background-color: #88c977;
+}
+
+.change-position{
+  display: flex;
+  justify-content: space-between;
+}
+
+.task,.deadline{
+  text-align: center;
+}
+.description{
+  flex-grow: 1;
+  resize: none;
+  overflow-y: scroll;
+  background-color: #323844;
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #21252b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4c4f54;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
